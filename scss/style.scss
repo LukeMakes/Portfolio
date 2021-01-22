@@ -120,3 +120,35 @@ img {
     }
   }
 }
+
+  // Home Section B: Stats
+  &-stats{
+    .stats{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+
+      li{
+        line-height: 1.5;
+
+        &.stats-title{
+          font-size: 1.4rem;
+        }
+
+        &.stats-number{
+          font-size: 2.5rem;
+          font-weight: bold;
+        }
+      }
+
+      div{
+        padding: 3rem 0;
+
+        &:nth-child(odd){
+          background: $light-color;
+        }
+        &:nth-child(even){
+          background: $medium-color;
+        }
+      }
+    }
+  }
