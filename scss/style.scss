@@ -202,6 +202,83 @@ img {
   }
 }
 
+// About Section
+#about{
+  // About Section A: Info
+  &-info{
+    .info{
+      display: grid;
+      grid-template-areas: 
+        'bioimage bio bio'
+        'aw1 aw2 aw3';
+      grid-gap: 1.2rem;
+    }
+
+    // Grid Area
+    .bio-image{
+      grid-area: bioimage;
+    }
+
+    .bio{
+      grid-area: bio;
+      border-left: 3px solid $main-color;
+    }
+
+    .award-1{
+      grid-area: aw1;
+    }
+    .award-2{
+      grid-area: aw2;
+    }
+    .award-3{
+      grid-area: aw3;
+    }
+
+    .award-1 .fas,
+    .award-2 .fas,
+    .award-3 .fas{
+      color: $main-color;
+      margin: 1rem;
+    }
+  }
+
+  // About Section B: Progress Bars
+  &-progress{
+    .progress{
+      overflow: hidden;
+      height: 20px;
+      background-color: #c9c9c9;
+      border-radius: 5px;
+      margin-bottom: 0.6rem;
+
+      div{
+        height: 100%;
+        color: $text-color;
+        background-color: $main-color;
+      }
+    }
+  }
+
+  // About Section C: Logos
+  &-logo{
+    .logos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+
+    img{
+      width: 80%;
+    }
+
+    img:nth-child(2){
+      padding-top: 10px;
+    }
+    }
+  }
+}
+
+
+
 // Footer
 #main-footer{
   background: $dark-color;

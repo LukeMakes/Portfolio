@@ -306,6 +306,82 @@ img {
   background: #333;
 }
 
+#about-info .info {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'bioimage bio bio' 'aw1 aw2 aw3';
+  grid-gap: 1.2rem;
+}
+
+#about-info .bio-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: bioimage;
+}
+
+#about-info .bio {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: bio;
+  border-left: 3px solid #ff0055;
+}
+
+#about-info .award-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: aw1;
+}
+
+#about-info .award-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: aw2;
+}
+
+#about-info .award-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: aw3;
+}
+
+#about-info .award-1 .fas,
+#about-info .award-2 .fas,
+#about-info .award-3 .fas {
+  color: #ff0055;
+  margin: 1rem;
+}
+
+#about-progress .progress {
+  overflow: hidden;
+  height: 20px;
+  background-color: #c9c9c9;
+  border-radius: 5px;
+  margin-bottom: 0.6rem;
+}
+
+#about-progress .progress div {
+  height: 100%;
+  color: #fff;
+  background-color: #ff0055;
+}
+
+#about-logo .logos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+#about-logo .logos img {
+  width: 80%;
+}
+
+#about-logo .logos img:nth-child(2) {
+  padding-top: 10px;
+}
+
 #main-footer {
   background: #333;
   color: #fff;
